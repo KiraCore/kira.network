@@ -1,0 +1,621 @@
+
+
+@media screen and (max-width: 1024px) {
+	.container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.technology-right {
+		width: calc(100% - 350px);
+	}
+	.roadmap-text ul li {
+		width: 45%;
+		margin-right: 0;
+	}
+	.roadmap-text ul {
+		justify-content: space-between;
+	}
+	.start-left {
+		width: 100%;
+	}
+	.start .container {
+		flex-flow: column;
+	}
+	.start-left {
+		top: 0;
+		margin-top: 12px;
+	}
+	.start-text {
+		max-width: 100%;
+		font-weight: 400;
+	}
+	.video {
+		margin-left: -20px;
+		margin-right: -20px;
+		right: 0;
+		width: calc(100% + 40px);
+	}
+	.page-about .container {
+		align-items: flex-start;
+	}
+	.about-animation {
+		width: 35%;
+		left: 0;
+	}
+	.about-right {
+		width: 60%;
+	}
+	.h3-half {
+		width: 100%;
+	}
+	.technology-section {
+		padding: 0 50px 0 85px;
+	}
+	.header-img {
+		right: -150px;
+	}
+	.about-result-img {
+		width: calc(100% - 410px);
+	}
+	.team-section {
+		width: 33.3%;
+	}
+}
+@media screen and (max-width: 800px) {
+	/*моб меню*/
+	.icon-mob {
+		z-index: 5;
+		display: block;
+		position: relative;
+		width: 21px;
+		height: 16px;
+		cursor: pointer;
+	}
+	.icon-mob span,
+	.icon-mob::before,
+	.icon-mob::after {
+		left: 0;
+		position: absolute;
+		height: 10%;
+		width: 100%;
+		transition: all 0.3s ease 0s;
+		background-color: #fff;
+	}
+	.icon-mob::before,
+	.icon-mob::after {
+		content: "";
+	}
+	.icon-mob::before {
+		top: 0;
+	}
+	.icon-mob::after {
+		bottom: 0;
+	}
+	.icon-mob span {
+		top: 50%;
+		transform: scale(1) translate(0px, -50%);
+	}
+
+	.icon-mob._active-mob span {
+		transform: scale(0) translate(0px, -50%);
+	}
+	.icon-mob._active-mob::before {
+		top: 50%;
+		transform: rotate(-45deg) translate(0px, -50%);
+	}
+	.icon-mob._active-mob::after {
+		bottom: 50%;
+		transform: rotate(45deg) translate(0px, 50%);
+	}
+	.section-nav {
+		width: 375px;
+		padding: 0 20px;
+		background-color: var(--color-dark);
+		position: fixed;
+		top: 0;
+		height: 100%;
+		left: -100%;
+		transition: left 0.3s ease 0s;
+		overflow: auto;
+		justify-content: flex-start;
+    	align-items: center;
+		flex-flow: column;
+		overflow: auto;
+	}
+	.section-nav._active-mob {
+		left: 0;
+	}
+	.section-menu {
+		flex-flow: column;
+		width: 100%;
+	}
+	.lang {
+		margin-left: 0;
+	}
+	.logo-mob {
+		width: 100%;
+		padding: 32px 0;
+		display: block;
+	}
+	.section-menu li a {
+		padding: 25px 0;
+	}
+	.section-menu li a:after {
+		bottom: 11px;
+		background: #298DFF;
+	}
+	.lang {
+		margin-top: 25px;
+	}
+	.start-link.mob-start-link {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 50px;
+		margin-bottom: 60px;
+	}
+	/*конец моб меню*/
+	.start {
+		padding-top: 94px;
+	}
+	.page-about .container {
+		flex-flow: column;
+	}
+	.about-right {
+		order: 1;
+		width: 100%;
+	}
+	.about-animation {
+		width: 100%;
+		text-align: center;
+		order: 2;
+	}
+	.advantages-section {
+		width: 45%;
+		margin-bottom: 43px;
+	}
+	.advantages-img {
+		margin-bottom: 35px;
+	}
+	.advantages-title {
+		margin-bottom: 12px;
+	}
+	.technology-left {
+		width: 100%;
+		margin-bottom: 45px;
+	}
+	.page-technology .container {
+		flex-flow: column;
+	}
+	.technology-right {
+		width: 100%;
+	}
+	.page-solutions .container {
+		flex-flow: column;
+	}
+	.solutions-right {
+		width: 100%;
+	}
+	.solutions-title {
+		padding-top: 0;
+	}
+	.solutions-img {
+		width: 120%;
+		margin-right: 0;
+		margin-top: 30px;
+		margin-left: -2.2vw;
+	}
+	.gallery-thumbs {
+		padding: 10px 20px;
+		width: calc(100% + 40px) !important;
+		margin-left: -20px !important;
+		margin-right: -20px !important;
+	}
+	.line {
+		left: -26px;
+		width: calc(100% + 52px);
+	}
+	.gradient-overflow {
+		width: 236%;
+	}
+	.roadmap-text ul {
+		flex-flow: column;
+		align-items: flex-start;
+	}
+	.roadmap-flex {
+		align-items: flex-start;}
+	.roadmap-text ul li {
+		width: 100%;
+		margin-bottom: 56px;
+	}
+	.roadmap-text ul li:last-child {
+		margin-bottom: 0;
+	}
+	.page-contacts-form {
+		flex-flow: column;
+		align-items: center;
+	}
+	.input-box {
+		width: 100%;
+	}
+	.input-item {
+		width: 47%;
+	}
+	.footer-column-top-flex {
+		flex-flow: column;
+		align-items: flex-start;
+	}
+	.footer-email {
+		margin-top: 20px;
+	}
+	.footer-nav li {
+		padding: 12px 0;
+	}
+	.footer-logo {
+		margin-bottom: 20px;
+		display: block;
+	}
+	.footer-column-bottom-flex {
+		flex-flow: column;
+		align-items: flex-start;
+		padding: 42px 0;
+	}
+	.soc {
+		order: 1;
+		margin-bottom: 29px;
+	}
+	.footer-nav-two {
+		order: 2;
+		margin-bottom: 29px;
+	}
+	.copy {
+		order: 3;
+	}
+	.tw {
+		margin-left: 0;
+	}
+	.footer-nav-two li {
+		padding: 12px 0;
+	}
+	.page-roadmap .container:after,
+	.page-blog .container:after{
+		left: 20px;
+	}
+	.header {
+		padding-top: 94px;
+		width: 100%;
+	}
+	.inner {
+		padding: 61px 0 72px;
+	}
+	h3, h4, h5, .h3 {
+		margin: 32px 0;
+	}
+	
+	.about-result-flex {
+		flex-flow: row wrap;
+	}
+	.about-result-stage {
+		width: 100%;
+	}
+	.about-result-img {
+		width: 100%;
+		text-align: center;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+		align-items: center;
+		margin-top: 64px;
+	}
+	.about-result-img img{
+		max-width: 400px;
+	}
+	.header-left {
+		width: 300px;
+	}
+	.header-img {
+		width: calc(100% + 40px);
+		margin-right: -20px;
+		margin-left: -20px;
+	}
+	.technology-list {
+		display: none;
+	}
+	.technology-cont {
+		width: 100%;
+	}
+	.team-section {
+		width: 50%;
+		margin-bottom: 32px;
+	}
+	.solution-more {
+		display: none;
+	}
+	.more-mob {
+		display: block;
+		margin-top: 82px;
+	}
+	.section-menu li {
+		transform: translate(0px, 50%);
+		transition: all 0.3s ease 0s;
+		opacity: 0;
+	}
+	._active-mob .section-menu li:nth-child(1) {
+		transition: all 0.8s ease 0s;
+	}
+	._active-mob .section-menu li:nth-child(2) {
+		transition: all 0.8s ease 0.2s;
+	}
+	._active-mob .section-menu li:nth-child(3) {
+		transition: all 0.8s ease 0.4s;
+	}
+	._active-mob .section-menu li:nth-child(4) {
+		transition: all 0.8s ease 0.6s;
+	}
+	._active-mob .section-menu li:nth-child(5) {
+		transition: all 0.8s ease 0.8s;
+	}
+	
+	.lang {
+		transform: translate(0px, 50%) !important;
+		transition: all 0.3s ease 1s;
+		opacity: 0 !important;
+	}
+	.mob-start-link {
+		transform: translate(0px, 50%);
+		transition: all 0.3s ease 1.2s;
+		opacity: 0;
+	}
+	._active-mob .section-menu li, 
+	._active-mob .lang,
+	._active-mob .mob-start-link {
+		opacity: 1 !important;
+		transform: translate(0px, 0px) !important;
+	}
+	.header .container {
+		height: 400px;
+	}
+	.header-img img{
+		height: auto;
+		max-height: none;
+		width: auto;
+		height: 400px;
+		position: absolute;
+		top: 0;
+		right: -110px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.container {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+	.gradient-overflow {
+		width: 343%;
+	}
+	.technology-number {
+		width: 48px;
+		height: 48px;
+		top: -9px;
+	}
+	.technology-section {
+		padding: 0 25px 0 67px;
+	}
+	.technology-title {
+		width: 90%;
+	}
+	.roadmap-flex {
+		flex-flow: column;
+	}
+	.roadmap-date:after {
+		display: none;
+	}
+	.roadmap-date {
+		margin-bottom: 48px;
+	}
+	.blog-flex {
+		flex-flow: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.blog-section {
+		max-width: 335px;
+		width: 100%;
+		margin-bottom: 48px;
+	}
+	.news-section {
+		flex-flow: column;
+	}
+	.news-section-right {
+		width: 100%;
+	}
+	.news-section-img {
+		margin-bottom: 45px;
+	}
+	.input-box {
+		flex-flow: column;
+		margin-bottom: 35px;
+	}
+	.input-item {
+		width: 100%;
+	}
+	.input-item input {
+		margin-bottom: 64px;
+	}
+	.page-contacts {
+		padding: 72px 0;
+	}
+	.footer-nav {
+		flex-flow: column;
+		align-items: flex-start;
+	}
+	.footer-nav-two {
+		flex-flow: column;
+	}
+	.page-contacts-form input[type='submit'] {
+		width:100%;
+	}
+	.section-nav {
+		width: 100%;
+	}
+	.advantages-section {
+		width: 100%;
+	}
+	h1, h2, .h1 {
+		font-size: 37px;
+	}
+	.start-link {
+		display: none;
+	}
+	.start-link-pk {
+		display: none;
+	}
+	.start-link.start-link-mobinpage {
+		display: block;
+		width: 100%;
+		margin-top: -19%;
+		position: relative;
+		z-index: 10;
+	}
+	.start-link-mobinpage a{
+		width: 100%;
+	}
+	.page-about .container,
+	.page-solutions,
+	.page-roadmap,
+	.page-blog
+	{
+		padding-top: 72px;
+		padding-bottom: 72px;
+	}
+	.page-advantages,
+	.page-technology .container{
+		padding-top: 72px;
+	}
+	.gallery-thumbs {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.page-roadmap .container,
+	.page-economy{
+		padding-bottom: 70px;
+	}
+	.swiper-partners {
+		margin-bottom: 30px;
+	}
+	.economy-flex {
+		margin: 20px 0 30px;
+	}
+	.economy-section {
+		width: 45%;
+		margin-bottom: 30px;
+	}
+	
+	.page-footer {
+		padding-top: 56px;
+	}
+	.footer-column-top-flex {
+		padding-bottom: 40px;
+	}
+	.column-flex {
+		margin-bottom: 116px;
+	}
+	.about-advantages-flex {
+		padding: 60px 0 0;
+	}
+	.about-advantages-section {
+		margin-bottom: 69px;
+	}
+	.video1,
+	.video2 {
+		display: none;
+	}
+	.img-video {
+		display: block;
+	}
+	.img-video,
+	.header-img {
+		width: 130%;
+		margin-left: -30%;
+		display: flex;
+		margin-top: -5%;
+		flex-flow: row nowrap;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	.header .container {
+		flex-flow: column;
+	}
+	.header-left {
+		margin-right: 0;
+		width: 100%;
+		
+	}
+	.gradient-left,
+	.gradient-right,
+	.gradient-top,
+	.gradient-bottom {
+		display: none;
+	}
+	.column-flex {
+		flex-flow: column;
+	}
+	.column-flex-section {
+		width: 100%;
+	}
+	
+	.about-advantages-section {
+		width: 100%;
+	}
+	.header {
+		padding-bottom: 32px;
+	}
+	.header-img img {
+		position: relative;
+		height: auto;
+		width: 130%;
+		right: -40px;
+	}
+	.header-img {
+		position: relative;
+	}
+	.header .container {
+		height: auto;
+	}
+}
+@media screen and (max-width: 480px) {
+	.img-video,
+	.header-img {
+		width: 185%;
+    	margin-left: -70%;
+	}
+	.start-link.start-link-mobinpage {
+		margin-top: -24%;
+	}
+	.about-advantages-text {
+		max-width: auto;
+		width: 100%;
+	}
+	.about-result-img img {
+		max-width: auto;
+		width: 100%;
+	}
+	.team-section {
+		width: 100%;
+	}
+	.blog-section {
+		max-width: none;
+		margin-right: 0;
+	}
+	.blog-flex {
+		align-items: flex-start;
+    	justify-content: flex-start;
+	}
+	.economy-section img,
+	.swiper-partners .swiper-slide img {
+		max-width: 120px;
+	}
+}

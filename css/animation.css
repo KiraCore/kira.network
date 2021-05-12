@@ -1,0 +1,44 @@
+.video2{
+	animation: video2 7S ease-in-out;
+	transition: video2 .1s ease-in-out;}
+@keyframes video2{
+	0%{
+		opacity: 0;}
+	99% {
+		opacity: 0;}
+	100%{
+		opacity: 1;}
+}
+@keyframes header1{
+	0%{
+		opacity: 0;
+		top: 50px;}
+	55%{
+		opacity: 0;
+		top: 50px;}
+	100%{
+		opacity: 1;
+		top: 0;}
+}
+@keyframes header2{
+	0%{
+		opacity: 0;
+		top: 50px;}
+	60%{
+		opacity: 0;
+		top: 50px;}
+	100%{
+		opacity: 1;
+		top: 0;}
+}
+@keyframes header3{
+	0%{
+		opacity: 0;
+		top: 50px;}
+	66.67%{
+		opacity: 0;
+		top: 50px;}
+	100%{
+		opacity: 1;
+		top: 0;}
+}
