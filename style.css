@@ -1705,6 +1705,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00060918', e
 	opacity: 1;
 	transition: opacity 0.3s ease 0s;
 }
+.ld {
+	width: 20px;
+	height: 17px;
+	margin: 0 16px;
+	background: url("images/linkedin-icon.svg");
+	opacity: 1;
+	transition: opacity 0.3s ease 0s;
+}
 .m {
 	width: 20px;
 	height: 17px;
@@ -1732,6 +1740,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00060918', e
 .tl:hover,
 .tw:hover,
 .m:hover,
+.ld:hover,
 .cat:hover{
 	opacity: .5;
 }
