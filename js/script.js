@@ -95,13 +95,11 @@ if (animItems.length > 0) {
 	//галерея партнеры
 	var swiper = new Swiper('.page-partners .swiper-container', {		
 		slidesPerView: 4,
-		slidesPerColumn: 2,
 		slidesPerGroup: 4,
 		loop: true,
-		loopFillGroupWithBlank: true,
 		spaceBetween: 30,
 		autoplay: {
-			delay: 2500,
+			delay: 2000,
 			disableOnInteraction: false,
 		},
 
@@ -109,7 +107,7 @@ if (animItems.length > 0) {
 			320: {
 			  slidesPerView: 2
 			},
-			640: {
+			800: {
 			  slidesPerView: 4
 			}
 		 }
