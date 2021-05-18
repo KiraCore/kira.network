@@ -385,6 +385,10 @@
 		top: 0;
 		right: -110px;
 	}
+	.economy-section {
+		width: 45%;
+		margin-bottom: 30px;
+	}
 }
 
 @media screen and (max-width: 640px) {
@@ -508,10 +512,7 @@
 	.economy-flex {
 		margin: 20px 0 30px;
 	}
-	.economy-section {
-		width: 45%;
-		margin-bottom: 30px;
-	}
+	
 	
 	.page-footer {
 		padding-top: 56px;
