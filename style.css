@@ -272,7 +272,7 @@ margin-right: -55%;}
 	top: -20px;
 	z-index: 1;}
 .gradient-left {
-	width: 250px;
+	width: 500px;
 	height: 100%;
 	position: absolute;
 	top: 0;
@@ -285,7 +285,7 @@ margin-right: -55%;}
 
 }
 .gradient-right {
-	width: 100px;
+	width: 260px;
 	height: 100%;
 	position: absolute;;
 	top: 0;
@@ -492,7 +492,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00060918', e
 
 .page-about {
 	width: 100%;
-	background:  #060817;
+	background:  #040717;
 	padding: 0 0 7.760vw;
 }
 .page-about .container{
@@ -1325,7 +1325,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00060918', e
 }
 .swiper-partners {
 	width: 100%;
-	height: 240px;
+	height: 260px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -1348,10 +1348,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00060918', e
 }
 
 .swiper-partners .swiper-slide{
-	height: calc((100% - 30px) / 2);
 	display: flex;
+	flex-flow: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+.swiper-partners .swiper-slide a{
+	display: flex;
+	flex-flow: row;
 	justify-content: center;
 	align-items: center;
+	height: 130px;
 }
 .swiper-partners .swiper-slide img{
 	max-width: 170px;
@@ -1788,6 +1795,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00060918', e
 	font-weight: 800;
 	margin-bottom: 35px;
 	color:  var(--color-dark);
+	transform: translate(0px, -20%);
+	opacity: 0;
+	transition: all 0.3s ease 0s;
+}
+.inner h4._active,
+.h4-inner._active {
+	transform: translate(0px, 0px);
+	opacity: 1;
 }
 .column-flex {
 	display: flex;
@@ -1798,6 +1813,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00060918', e
 }
 .column-flex-section {
 	width: 47.8%;
+	transform: translate(0px, -20%);
+	opacity: 0;
+	transition: all 0.3s ease 0s;
+}
+.column-flex-section._active {
+	transform: translate(0px, 0px);
+	opacity: 1;
 }
 .colomn-number {
 	color: var(--color-dark);
@@ -1815,6 +1837,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00060918', e
 .about-advantages-section {
 	width: 47.8%;
 	margin-bottom: 64px;
+	transform: translate(0px, -20%);
+	opacity: 0;
+	transition: all 0.3s ease 0s;
+}
+.about-advantages-section._active{
+	transform: translate(0px, 0px);
+	opacity: 1;
 }
 .about-advantages-icon {
 	margin-bottom: 32px;
@@ -1845,9 +1874,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00060918', e
 }
 .about-result-img {
 	width: calc(100% - 497px);
+	transform: translate(0px, -20%);
+	opacity: 0;
+	transition: all 0.3s ease 0s;
+}
+.about-result-img._active {
+	transform: translate(0px, 0px);
+	opacity: 1;
 }
 .about-result-section {
 	margin-top: 48px;
+	transform: translate(0px, -20%);
+	opacity: 0;
+	transition: all 0.3s ease 0s;
+}
+.about-result-section._active {
+	transform: translate(0px, 0px);
+	opacity: 1;
 }
 .about-result-section:first-child {
 	margin-top: 0;
@@ -1967,9 +2010,11 @@ p {
 .img-page {
 	margin: 64px 0;
 }
-.page-section1,
-.page-section2 {
+.page-section1 {
 	margin-bottom: 80px;
+}
+.page-section3 {
+	padding-top: 80px;
 }
 /*------------------------inner team-------------------*/
 
@@ -2013,7 +2058,9 @@ p {
 	font-size: 14px;
 }
 .team-work a:hover{
-	text-decoration: underline;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+	color: #4264F2;
 }
 
 /*------------------------header-----------------------*/
