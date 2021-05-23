@@ -435,26 +435,33 @@
     <div class="page-contacts">
     	<div class="container _anim-items _anim-no-hide">
             	<div class="h3 h3-white">Stay in touch</div>
-    		<form method="post" action="action.php" class="page-contacts-form">
-				<div class="input-box">
-					<div class="input-item">
-						<input type="text" name="name" required="">
-						<label>Name</label>
-					</div>
-					<div class="input-item">
-						<input type="text" name="email" required="">
-						<label>Email</label>
-					</div>
-				</div>
-                <input type="submit" value="Submit">
-            </form>
+    		
+            <!-- Begin Mailchimp Signup Form -->
+
+              <form action="https://global.us1.list-manage.com/subscribe/post?u=c9ceab16be7d607fd0d99f05f&amp;id=dce8e7f5b0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="page-contacts-form" target="_blank" novalidate>
+                      <div class="input-item">
+                          <input type="email" value="" name="EMAIL" id="mce-EMAIL" required="">
+                          <label for="mce-EMAIL">Email Address</label>
+                      </div>
+                      <div class="input-item">
+                          <input type="text" value="" name="FNAME" class="" id="mce-FNAME" required="">
+                          <label for="mce-FNAME">First Name </label>
+                      </div>
+                      <div class="input-item">
+                          <input type="text" value="" name="LNAME" class="" id="mce-LNAME" required="">
+                          <label for="mce-LNAME">Last Name </label>
+                      </div>
+                      <input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button">
+              </form>
+              <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+            <!--End mc_embed_signup-->
     	</div>
     </div>
     <div class="page-footer">
     	<div class="container">
 			<div class="footer-column-top-flex">
 				<div class="footer-column">
-					<a href="#" class="footer-logo"><img src="images/logo.svg" alt=""></a>
+					<a href="index.html" class="footer-logo"><img src="images/logo.svg" alt=""></a>
 				</div>
 				<ul class="footer-nav">
 					<li><a href="about.html">About</a></li>

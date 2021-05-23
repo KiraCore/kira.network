@@ -1519,15 +1519,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00060918', e
 	justify-content: space-between;
 	align-items: flex-start;
 }
-.contacts-input {
-	width: 68.6%;
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-between;
-	align-items: center;
-}
+
 .input-box {
-	width: 68.64%;
+	width: 100%;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
@@ -1535,7 +1529,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00060918', e
 }
 .input-item {
 	position: relative;
-	width: 45%;
+	width: calc( (100% - 350px) / 3);
 }
 
 .input-item input {
