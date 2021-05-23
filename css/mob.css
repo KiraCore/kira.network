@@ -60,6 +60,12 @@
 	.team-section {
 		width: 33.3%;
 	}
+	.input-item {
+		width: 45%;
+	}
+	.page-contacts-form {
+		flex-flow: row wrap;
+	}
 }
 @media screen and (max-width: 800px) {
 	/*моб меню*/
