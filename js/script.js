@@ -105,10 +105,12 @@ if (animItems.length > 0) {
 
 		breakpoints: {
 			320: {
-			  slidesPerView: 2
+			  slidesPerView: 2,
+			slidesPerGroup: 2
 			},
 			800: {
-			  slidesPerView: 4
+			  slidesPerView: 4,
+			slidesPerGroup: 4
 			}
 		 }
     });
