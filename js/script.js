@@ -70,7 +70,7 @@ if (animItems.length > 0) {
 		freeMode: true,
 		watchSlidesVisibility: true,
 		watchSlidesProgress: true,
-		initialSlide: 4,
+		initialSlide: 3,
 		breakpoints: {
 			320: {
 			  slidesPerView: 2
@@ -88,7 +88,7 @@ if (animItems.length > 0) {
       thumbs: {
         swiper: galleryThumbs
       },
-		initialSlide: 4,
+		initialSlide: 3,
     });
 	
 
