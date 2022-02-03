@@ -10,7 +10,7 @@ html, body {
 	--font-size36: calc( (100vw - 320px)/(1920 - 320) * (36 - 32) + 32px);
 	--font-size36-inner: calc( (100vw - 320px)/(1920 - 320) * (36 - 24) + 24px);
 	--font-size58: calc( (100vw - 320px)/(1920 - 320) * (58 - 44) + 44px);
-	font-family: 'Axiforma';
+	font-family: 'Axiforma', Arial, Helvetica, sans-serif;
 	font-size: var(--font-size16);
 	margin:0;
 	padding:0;
@@ -980,7 +980,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00060918', e
 	color: #fff;
 }
 .technology-text {
-	font-family: 'Gordita';
+	font-family: 'Gordita', Arial, Helvetica, sans-serif;
 	font-size: var(--font-size14);
 	line-height: 1.5;
 	color: var(--color-gray);
@@ -1158,7 +1158,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00060918', e
 }
 
 .gallery-thumbs .swiper-slide{
-	font-family: 'Gordita';
+	font-family: 'Gordita', Arial, Helvetica, sans-serif;
 	font-size: var(--font-size14);
 	color: var(--color-gray2);
 	font-weight: 400;
@@ -1302,7 +1302,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00060918', e
 	justify-content: flex-start;
 	align-items: flex-start;}
 	.roadmap-text ul li{
-		font-family: 'Gordita';
+		font-family: 'Gordita', Arial, Helvetica, sans-serif;
 		font-size: 12px;
 		padding: 5px 0;
 		color: var(--color-gray);
@@ -1452,7 +1452,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00060918', e
 	text-decoration: none;
 }
 .blog-section-text {
-	font-family: 'Gordita';
+	font-family: 'Gordita', Arial, Helvetica, sans-serif;
 	color: var(--color-gray2);
 	line-height: 1.5;
 }
@@ -1739,7 +1739,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00060918', e
 	opacity: .5;
 }
 .copy {
-	font-family: 'Gordita';
+	font-family: 'Gordita', Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	color: var(--color-gray2);
 }
@@ -1908,7 +1908,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00060918', e
 .about-result-text {
 	line-height: 1.5;
 	font-size: 14px;
-	font-family: 'Gordita';
+	font-family: 'Gordita', Arial, Helvetica, sans-serif;
 }
 /*------------------------inner technology-------------*/
 
@@ -1942,7 +1942,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00060918', e
 	padding-left: 85px;
 	position: relative;
 	margin-bottom: 82px;
-	font-family: 'Gordita';
+	font-family: 'Gordita', Arial, Helvetica, sans-serif;
 	line-height: 1.46;
 	color:  #7c8b9a;
 	transition: all 0.3s ease-out;
