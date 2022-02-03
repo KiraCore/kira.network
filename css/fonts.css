@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../font/Axiforma-Regular.eot');
+    src: local('Axiforma Regular'), local('Axiforma-Regular'),
+        url('../font/Axiforma-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../font/Axiforma-Regular.woff2') format('woff2'),
+        url('../font/Axiforma-Regular.woff') format('woff'),
+        url('../font/Axiforma-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../font/Axiforma-SemiBold.eot');
+    src: local('Axiforma SemiBold'), local('Axiforma-SemiBold'),
+        url('../font/Axiforma-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../font/Axiforma-SemiBold.woff2') format('woff2'),
+        url('../font/Axiforma-SemiBold.woff') format('woff'),
+        url('../font/Axiforma-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../font/Axiforma-Bold.eot');
+    src: local('Axiforma Bold'), local('Axiforma-Bold'),
+        url('../font/Axiforma-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/Axiforma-Bold.woff2') format('woff2'),
+        url('../font/Axiforma-Bold.woff') format('woff'),
+        url('../font/Axiforma-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gordita';
+    src: url("../font/Gordita-Regular.eot");
+    src: local('Gordita Regular'), local('Gordita-Regular'),
+        url('../font/Gordita-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../font/Gordita-Regular.woff2') format('woff2'),
+        url('../font/Gordita-Regular.woff') format('woff'),
+        url('../font/Gordita-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

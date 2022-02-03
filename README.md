@@ -6,4 +6,4 @@ Main Landing Page
 Fully Automated Deployment
 
 * `main` (production) -> kira.network 
-* `dec` (testing) -> dev.kira.network 
+* `dev` (testing) -> dev.kira.network 
