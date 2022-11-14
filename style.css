@@ -136,7 +136,7 @@ body._lock {
 .section-menu,
 .lang {
 	transform: translate(0px, -20%);
-	opacity: 0;
+	opacity: 1;
 	transition: all 0.3s ease 0s;
 }
 .logo._active,
