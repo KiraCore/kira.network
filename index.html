@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<head>
+<html lang="en">
+	<head>
 	<meta charset="utf-8">
 	<meta name="theme-color" content="#272738">
 	<meta name="msapplication-navbutton-color" content="#00B473">
@@ -13,8 +14,7 @@
     <link href="css/fonts.css" rel="stylesheet" type="text/css" />
     <link href="css/animation.css" rel="stylesheet" type="text/css" />
 	<link href="css/mob.css" rel="stylesheet" type="text/css" />
-	<link rel="icon" type="image/png" href="images/favicon/favicon.ico"> 
-
+	<link rel="icon" type="image/png" href="images/favicon/favicon.ico">
 
 </head>
 
@@ -27,16 +27,23 @@
         <div class="section-nav">
 			<div class="logo-mob"><img src="images/logo.svg" alt=""></div>
             <ul class="section-menu  _anim-items _anim-no-hide">
-              <li><a href="about.html">About</a></li>
-              <li><a href="technology.html">TECHNOLOGY</a></li>
-              <li><a href="team.html">TEAM</a></li>
-              <li><a href="blog.html">BLOG</a></li>
-			  <li><a href="careers.html">CAREERS</a></li>
+              <li><a class="lng-link1" href="about.html">About</a></li>
+              <li><a class="lng-link2" href="technology.html">TECHNOLOGY</a></li>
+              <!--<li><a class="lng-link3" href="team.html">TEAM</a></li>-->
+              <li><a class="lng-link4" href="blog.html">BLOG</a></li>
+			  <li><a class="lng-link5" href="careers.html">CAREERS</a></li>
+
             </ul>
-          <div class="lang select _anim-items _anim-no-hide">
-      			<a href="#" class="trigger">EN</a>
+
+      <div class="lang select _anim-items _anim-no-hide">
+			<!-- <select class="change-lang">
+                <option value="en"selected>EN</option>
+                <option value="ru">RU</option>
+            </select> -->
+	      			<a href="" class="trigger">EN</a>
       			<div class="select-popup">
-      				<a href="#">漢語</a>
+							<a onclick="changeURLLanguage('en')" >EN</a>
+							<a onclick="changeURLLanguage('ru')" >RU</a>
 			     </div>
 		  </div>
 			<div class="start-link mob-start-link"><a href="https://testnet.kira.network" target="_blank" target="_blank" class="start-link-btn"><span>Join Testnet</span></a></div>
@@ -47,9 +54,9 @@
     <div class="start">
     	<div class="container">
     		<div class="start-left">
-    			<div class="h1 _anim-items _anim-no-hide">Genesis of Decentralized Finance</div>
-    			<div class="start-text _anim-items _anim-no-hide">The first network that hosts, powers and secures DeFi applications with value of real assets at stake. Your cross-chain access to uncapped liquidity and tokenized assets.</div>
-    			<div class="start-link start-link-pk _anim-items _anim-no-hide"><a href="https://testnet.kira.network" class="start-link-btn"><span>Join Testnet</span></a></div>
+    			<div class="h1 _anim-items _anim-no-hide lng-t1">Genesis of Decentralized Finance</div>
+    			<div class="start-text _anim-items _anim-no-hide lng-description">The first network that hosts, powers and secures DeFi applications with value of real assets at stake. Your cross-chain access to uncapped liquidity and tokenized assets.</div>
+    			<div class="start-link start-link-pk _anim-items _anim-no-hide"><a href="https://testnet.kira.network" class="start-link-btn "><span class="lng-action-1">Join Testnet</span></a></div>
     		</div>
         <div class="video">
 				    <div class="gradient-left"></div>
@@ -75,17 +82,17 @@
         </video>
         </div>
     		<div class="about-right _anim-items _anim-no-hide">
-    			<div class="h3 h3-white">KIRA is a financial hub connecting decentralized Web3 applications</div>
+    			<div class="h3 h3-white lng-block-2-title">KIRA is a financial hub connecting decentralized Web3 applications</div>
     			<div class="about-text">
-    				<p>As an integral part of the Web3 stack KIRA enables value settlement between dApps and largest interconnected networks in the cryptocurrency ecosystem.</p>
-                    <p>Thanks to uncapped value at stake originating from both real world and interchain space KIRA provides secure Layer 1 platform for deploying decentralized applications and issuing digital assets.</p>
+    				<p class="lng-block-2-description-1">As an integral part of the Web3 stack KIRA enables value settlement between dApps and largest interconnected networks in the cryptocurrency ecosystem.</p>
+                    <p class="lng-block-2-description-2">Thanks to uncapped value at stake originating from both real world and interchain space KIRA provides secure Layer 1 platform for deploying decentralized applications and issuing digital assets.</p>
     			</div>
     		</div>
     	</div>
     </div>
     <div class="page-advantages">
     	<div class="container">
-    		<div class="h3 h3-black h3-half">Use your assets to their full potential</div>
+    		<div class="h3 h3-black h3-half lng-block-3-title">Use your assets to their full potential</div>
     		<div class="advantages-flex">
     			<section class="advantages-section _anim-items _anim-no-hide">
             <div class="icon-anim">
@@ -93,8 +100,8 @@
               <div class="icon-anim-light-1 _anim-items _anim-no-hide"></div>
               <div class="icon-gradient _anim-items _anim-no-hide"></div>
             </div>
-    				<div class="advantages-title">Stake any asset</div>
-    				<div class="advantages-text">KIRA enables users to stake tokenized representations of any of their current assets.</div>
+    				<div class="advantages-title lng-block-3-subblock-title">Stake any asset</div>
+    				<div class="advantages-text lng-block-3-subblock-description">KIRA enables users to stake tokenized representations of any of their current assets.</div>
     			</section>
     			<section class="advantages-section _anim-items _anim-no-hide">
             <div class="icon-anim">
@@ -102,8 +109,8 @@
               <div class="icon-anim-light-2 _anim-items _anim-no-hide"></div>
               <div class="icon-gradient _anim-items _anim-no-hide"></div>
             </div>
-    				<div class="advantages-title">Market access</div>
-    				<div class="advantages-text">Interchain Exchange Protocol provides access to all tokens, allowing users to stake on multiple chains</div>
+    				<div class="advantages-title lng-block-3-subblock2-title">Market access</div>
+    				<div class="advantages-text lng-block-3-subblock2-description">Interchain Exchange Protocol provides access to all tokens, allowing users to stake on multiple chains</div>
     			</section>
     			<section class="advantages-section _anim-items _anim-no-hide">
             <div class="icon-anim">
@@ -111,8 +118,8 @@
               <div class="icon-anim-light-3 _anim-items _anim-no-hide"></div>
               <div class="icon-gradient _anim-items _anim-no-hide"></div>
             </div>
-    				<div class="advantages-title">Retain custody</div>
-    				<div class="advantages-text">User stake directly on KIRA Network and retain full custody of their underlying assets</div>
+    				<div class="advantages-title lng-block-3-subblock3-title">Retain custody</div>
+    				<div class="advantages-text lng-block-3-subblock3-description">User stake directly on KIRA Network and retain full custody of their underlying assets</div>
     			</section>
     			<section class="advantages-section _anim-items _anim-no-hide">
             <div class="icon-anim">
@@ -120,8 +127,8 @@
               <div class="icon-anim-light-4 _anim-items _anim-no-hide"></div>
               <div class="icon-gradient _anim-items _anim-no-hide"></div>
             </div>
-    				<div class="advantages-title">Derivatives</div>
-    				<div class="advantages-text">Staking derivatives enable users to receive network block fees and rewards and stake on leverage</div>
+    				<div class="advantages-title lng-block-3-subblock4-title">Derivatives</div>
+    				<div class="advantages-text lng-block-3-subblock4-description">Staking derivatives enable users to receive network block fees and rewards and stake on leverage</div>
     			</section>
     			<section class="advantages-section _anim-items _anim-no-hide">
             <div class="icon-anim">
@@ -129,11 +136,11 @@
               <div class="icon-anim-light-5 _anim-items _anim-no-hide"></div>
               <div class="icon-gradient _anim-items _anim-no-hide"></div>
             </div>
-    				<div class="advantages-title">Security</div>
-    				<div class="advantages-text">KIRA utilizes the value of real world assets at stake to secure the network with no limitations of value at stake or types of assets</div>
+    				<div class="advantages-title lng-block-3-subblock5-title">Security</div>
+    				<div class="advantages-text lng-block-3-subblock5-description">KIRA utilizes the value of real world assets at stake to secure the network with no limitations of value at stake or types of assets</div>
     			</section>
     			<section class="advantages-section _anim-items _anim-no-hide">
-    				<a href="about.html" class="more advantages-more">READ MORE</a>
+    				<a href="about.html" class="more advantages-more lng-button-read-more">READ MORE</a>
     			</section>
     		</div>
     	</div>
@@ -142,25 +149,25 @@
 		<div class="circle-left"></div>
     	<div class="container">
         	<div class="technology-left  _anim-items _anim-no-hide">
-            	<div class="h3 h3-white h3-half h3-margintopnone">Technology stack</div>
-                <div class="technology-left-text">Kira is built as the powerhouse of the Web 3.0 economy to host decetralized financial applications</div>
-                <a href="technology.html" class="more more-white technology-left-more">VIEW ALL</a>
+            	<div class="h3 h3-white h3-half h3-margintopnone lng-technology-title">Technology stack</div>
+                <div class="technology-left-text lng-tech-description">Kira is built as the powerhouse of the Web 3.0 economy to host decetralized financial applications</div>
+                <a href="technology.html" class="more more-white technology-left-more lng-tech-buttom">VIEW ALL</a>
             </div>
         	<div class="technology-right">
             	<a href="technology.html#mbpos" class="technology-section _anim-items _anim-no-hide">
             		<span class="technology-number">01</span>
-            		<span class="technology-title">Multi-Bonded Proof of Stake (MBPoS)</span>
-            		<span class="technology-text">The first consensus enabling scaling of both throughput and security of the network, as well as natively supporting liquid staking of any fungible and non fungible tokens. MBPoS makes it possible to secure dApps with the value of real assets at stake and settle high value transfers originating from the cross-chain ecosystem.</span><span class="technology-line"></span><span class="technology-shadow"></span><span class="technology-arrow"></span>
+            		<span class="technology-title lng-tech-first-title">Multi-Bonded Proof of Stake (MBPoS)</span>
+            		<span class="technology-text lng-tech-first-description">The first consensus enabling scaling of both throughput and security of the network, as well as natively supporting liquid staking of any fungible and non fungible tokens. MBPoS makes it possible to secure dApps with the value of real assets at stake and settle high value transfers originating from the cross-chain ecosystem.</span><span class="technology-line"></span><span class="technology-shadow"></span><span class="technology-arrow"></span>
             	</a>
             	<a href="technology.html#ixp" class="technology-section _anim-items _anim-no-hide">
             		<span class="technology-number">02</span>
-            		<span class="technology-title">Interchain Exchange Protocol (IXP)</span>
-            		<span class="technology-text">The first sharded AMM supporting cross-chain communication protocols to enable permissionless listing and trading of staking derivatives without missing out on the block and fee rewards. IXP will be the first dApp on the KIRA to demonstrate full scaling capabilities of the network.</span><span class="technology-line"></span><span class="technology-shadow"></span><span class="technology-arrow"></span>
+            		<span class="technology-title lng-tech-second-title">Interchain Exchange Protocol (IXP)</span>
+            		<span class="technology-text lng-tech-second-description">The first sharded AMM supporting cross-chain communication protocols to enable permissionless listing and trading of staking derivatives without missing out on the block and fee rewards. IXP will be the first dApp on the KIRA to demonstrate full scaling capabilities of the network.</span><span class="technology-line"></span><span class="technology-shadow"></span><span class="technology-arrow"></span>
             	</a>
             	<a href="technology.html#ivo" class="technology-section _anim-items _anim-no-hide">
             		<span class="technology-number">03</span>
-            		<span class="technology-title">Initial Validator Offering (IVO) </span>
-            		<span class="technology-text">The first decentralized launchpad enabling crowdfunding without spending assets, locking value or giving out custody over your tokens to any third parties. IVO will further propel dApp development on KIRA Network and beyond.</span><span class="technology-line"></span><span class="technology-shadow"></span><span class="technology-arrow"></span>
+            		<span class="technology-title lng-tech-thirt-title">Initial Validator Offering (IVO) </span>
+            		<span class="technology-text lng-tech-thirt-description">The first decentralized launchpad enabling crowdfunding without spending assets, locking value or giving out custody over your tokens to any third parties. IVO will further propel dApp development on KIRA Network and beyond.</span><span class="technology-line"></span><span class="technology-shadow"></span><span class="technology-arrow"></span>
             	</a>
             </div>
         </div>
@@ -168,10 +175,10 @@
     <div class="page-solutions">
     	<div class="container">
 			<div class="solutions-right _anim-items _anim-no-hide">
-				<div class="h3">Solutions</div> 
-				<div class="solutions-title">KIRA Network:</div>
-				<div class="solutions-text">Upon launch of the Mainnet, KIRA users will be able to stake a variety of real world assets. To participate in the Testnet please join below.</div>
-				<a href="https://testnet.kira.network" target="_blank" class="more solution-more more-blue">JOIN TESTNET</a>
+				<div class="h3 lng-sol-title">Solutions</div>
+				<div class="solutions-title lng-sol-title-second">KIRA Network:</div>
+				<div class="solutions-text lng-sol-description">Upon launch of the Mainnet, KIRA users will be able to stake a variety of real world assets. To participate in the Testnet please join below.</div>
+				<a href="https://testnet.kira.network" target="_blank" class="more solution-more more-blue lng-sol-buttom">JOIN TESTNET</a>
 			</div>
 			<div class="solutions-img _anim-items _anim-no-hide"><img src="images/dashboard.png" alt=""></div>
       <a href="https://testnet.kira.network" target="_blank" class="more more-mob more-blue">JOIN TESTNET</a>
@@ -179,7 +186,7 @@
     </div>
     <div class="page-partners">
     	<div class="container _anim-items _anim-no-hide">
-    		<div class="h3 h3-white">Strategic Partners</div>
+    		<div class="h3 h3-white lng-title-partner">Strategic Partners</div>
           <div class="swiper-container swiper-partners">
   				<div class="swiper-wrapper">
   					<div class="swiper-slide">
@@ -194,15 +201,15 @@
               <a href="https://www.ngc.fund/"><img src="images/partners/partners_5.png" alt=""></a>
               <a href="https://krypital.com/"><img src="images/partners/partners_6.png" alt=""></a>
             </div>
-  					<div class="swiper-slide">            
+  					<div class="swiper-slide">
               <a href="https://www.theorigincapital.com/"><img src="images/partners/partners_7.png" alt=""></a>
               <a href="https://www.alphabit.fund/"><img src="images/partners/partners_8.png" alt=""></a>
             </div>
-  					<div class="swiper-slide">            
+  					<div class="swiper-slide">
               <a href="https://trgc.io/"><img src="images/partners/partners_9.png" alt=""></a>
               <a href="http://ascensiveassets.com/"><img src="images/partners/partners_10.png" alt=""></a>
             </div>
-  					<div class="swiper-slide">            
+  					<div class="swiper-slide">
               <a href="https://mathwallet.org/en-us/"><img src="images/partners/partners_11.png" alt=""></a>
               <a href="https://mantradao.com/"><img src="images/partners/partners_12.png" alt=""></a>
             </div>
@@ -228,6 +235,7 @@
             </div>
   					<div class="swiper-slide">
               <a href="https://clover.finance"><img src="images/partners/partners_23.png" alt=""></a>
+
             </div>
 				</div>
     	 </div>
@@ -235,7 +243,7 @@
     </div>
     <div class="page-economy">
     	<div class="container _anim-items _anim-no-hide">
-    		<div class="h3 h3-white">Token Economy</div>
+    		<div class="h3 h3-white lng-title-partner-two">Token Economy</div>
             <div class="economy-flex">
               <div class="economy-section"><a href="http://uniswap.kira.network"><img src="images/economy1.svg" alt=""></a></div>
               <div class="economy-section"><a href="https://ascendex.com"><img src="images/economy2.png" alt=""></a></div>
@@ -246,7 +254,7 @@
     </div>
     <div class="page-blog">
     	<div class="container _anim-items _anim-no-hide">
-    		<div class="h3 h3-anim _anim-items _anim-no-hide">Blog</div>
+    		<div class="h3 h3-anim _anim-items _anim-no-hide lng-title-articles">Blog</div>
     		<div class="blog-flex">
     			<section class="blog-section _anim-items _anim-no-hide">
     				    <a href="https://blog.kira.network/kira-partners-with-clover-finance-to-enable-non-custodial-cross-chain-staking-ba2816a9601d" class="blog-section-link">
@@ -267,12 +275,12 @@
     				<div class="blog-section-text">In this article, you will discover how digital fiat can be used to onboard users of legacy economies into the cryptocurrency space...</div>
     			</section>
     		</div>
-            <a href="blog.html" class="more">VIEW ALL</a>
+            <a href="blog.html" class="more lng-articles-buttom">VIEW ALL</a>
     	</div>
     </div>
     <div class="page-news">
     	<div class="container">
-    		<div class="h3 h3-anim _anim-items _anim-no-hide">Latest News</div>
+    		<div class="h3 h3-anim _anim-items _anim-no-hide lng-title-news">Latest News</div>
     		<div class="news-parent">
     			<section class="news-section _anim-items _anim-no-hide">
     				<a href="https://www.entrepreneur.com/article/382675" class="news-section-img" target="_blank"><img src="images/logo/cision.svg" alt=""></a>
@@ -295,24 +303,24 @@
     </div>
     <div class="page-contacts">
     	<div class="container _anim-items _anim-no-hide">
-            	<div class="h3 h3-white">Stay in touch</div>
-    		
+            	<div class="h3 h3-white lng-title-stay">Stay in touch</div>
+
             <!-- Begin Mailchimp Signup Form -->
 
               <form action="https://global.us1.list-manage.com/subscribe/post?u=c9ceab16be7d607fd0d99f05f&amp;id=dce8e7f5b0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="page-contacts-form" target="_blank" novalidate>
                       <div class="input-item">
                           <input type="email" value="" name="EMAIL" id="mce-EMAIL" required="">
-                          <label for="mce-EMAIL">Email Address</label>
+                          <label for="mce-EMAIL" class="lng-email-stay">Email Address</label>
                       </div>
                       <div class="input-item">
                           <input type="text" value="" name="FNAME" class="" id="mce-FNAME" required="">
-                          <label for="mce-FNAME">First Name </label>
+                          <label for="mce-FNAME" class="lng-first-stay">First Name </label>
                       </div>
                       <div class="input-item">
                           <input type="text" value="" name="LNAME" class="" id="mce-LNAME" required="">
-                          <label for="mce-LNAME">Last Name </label>
+                          <label for="mce-LNAME" class="lng-last-stay">Last Name </label>
                       </div>
-                      <input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button">
+                      <input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button lng-action-second">
               </form>
               <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
             <!--End mc_embed_signup-->
@@ -325,13 +333,13 @@
 					<a href="index.html" class="footer-logo"><img src="images/logo.svg" alt=""></a>
 				</div>
 				<ul class="footer-nav">
-					<li><a href="about.html">About</a></li>
+					<li><a class="lng-foo-link1" href="about.html">About</a></li>
 					<!--<li><a href="#">NFT</a></li>-->
-					<li><a href="technology.html">Technology</a></li>
-					<li><a href="team.html">Team</a></li>
-					<li><a href="blog.html">News</a></li>
-					<li><a href="blog.html">Blog</a></li>
-					<li><a href="careers.html">Careers</a></li>
+					<li><a class="lng-foo-link2" href="technology.html">Technology</a></li>
+					<!--<li><a class="lng-foo-link3" href="team.html">Team</a></li>-->
+					<!--<li><a class="lng-foo-link0" href="blog.html">News</a></li>-->
+					<li><a class="lng-foo-link4" href="blog.html">Blog</a></li>
+					<li><a class="lng-foo-link5" href="careers.html">Careers</a></li>
 				</ul>
 				<a href="mailto:partners@kira.global" class="footer-email">partners@kira.global</a>
 			</div>
@@ -340,20 +348,21 @@
 					<li><a href="https://wp.kira.network">White Paper</a></li>
 				</ul>
 				<div class="soc">
-					<a target=”_blank”  href="https://twitter.kira.network" class="tw"></a>
-					<a target=”_blank”  href="https://blog.kira.network" class="m"></a>
-					<a target=”_blank”  href="https://git.kira.network" class="cat"></a>
-					<a target=”_blank”  href="https://tg.kira.network" class="tl"></a>
+					<a href="https://twitter.kira.network" class="tw"></a>
+					<a href="https://blog.kira.network/" class="m"></a>
+					<a href="http://github.com/KiraCore" class="cat"></a>
+					<a href="http://tg.kira.network" class="tl"></a>
 				</div>
-				<div class="copy">2021 Kira Network , Inc. All rights reserved.</div>
+				<div class="copy">2022 Kira Network , Inc. All rights reserved.</div>
 			</div>
     	</div>
     </div>
 </div>
 
-
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
+<script src="js/lang.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

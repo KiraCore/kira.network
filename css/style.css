@@ -12,6 +12,7 @@ html, body {
 	--font-size58: calc( (100vw - 320px)/(1920 - 320) * (58 - 44) + 44px);
 	font-family: 'Axiforma';
 	font-size: var(--font-size16);
+	font-feature-settings: 'ss01';
 	margin:0;
 	padding:0;
 	height: 100%;
@@ -23,12 +24,14 @@ h1, h2, .h1 {
 	color: #fff;
 	font-weight: bold;
 	line-height: 1.2;
+	font-feature-settings: 'ss01';
 	margin: 24px 0px;
 	font-size: var(--font-size58);}
 h3, h4, h5, .h3 {
 	font-size: var(--font-size36);
 	font-weight: normal;
 	line-height: 1.4;
+	font-feature-settings: 'ss01';
 	margin:  2.917vw 0;
 	color: #060817;}
 .h3-white {
