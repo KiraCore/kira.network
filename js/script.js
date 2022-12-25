@@ -1,31 +1,5 @@
 $(function() {
-	//выпадающий список выбор языка
-document.querySelectorAll('.select .trigger').forEach(function(trigger){
-	trigger.onclick = function() {
-		var select = this.parentElement;
-		if (select.classList.contains('active')) {
-			select.classList.remove('active');
-		} else {
-			select.classList.add('active');
-			onClickClose(select.querySelector('.select-popup'), select);
-		}
-		return false;
-	}
-});
-function onClickClose(elem, parent) { // вызвать в момент показа окна, где elem - окно
-    function outsideClickListener(event) {
-        if (!elem.contains(event.target) && isVisible(elem) && !parent.contains(event.target)) {  // проверяем, что клик не по элементу и элемент виден
-             parent.classList.remove('active');
-             document.removeEventListener('click', outsideClickListener);
-        }
-    }
-    document.addEventListener('click', outsideClickListener)
-}
-function isVisible(elem) { //открыто ли условное окно
-   return !!elem && !!( elem.offsetWidth || elem.offsetHeight || elem.getClientRects().length );
-}
-	
-	//появление анимации при прокрутке	
+// animation on scroll
 const animItems = document.querySelectorAll('._anim-items');
 
 if (animItems.length > 0) {
@@ -64,7 +38,7 @@ if (animItems.length > 0) {
 	
 	
 
-	//слайдер по годам
+	// slider by years
 	var galleryThumbs = new Swiper('.gallery-thumbs', {
 		slidesPerView: 7,
 		freeMode: true,
@@ -92,7 +66,7 @@ if (animItems.length > 0) {
     });
 	
 
-	//галерея партнеры
+	// gallery partners
 	var swiper = new Swiper('.page-partners .swiper-container', {		
 		slidesPerView: 4,
 		slidesPerGroup: 4,
@@ -116,7 +90,7 @@ if (animItems.length > 0) {
 	
 
 	
-	//мобильное меню
+	// mobile menu
 	const iconMenu = document.querySelector('.icon-mob');
 	const menuBody = document.querySelector('.section-nav');
 	if (iconMenu) {
@@ -127,7 +101,7 @@ if (animItems.length > 0) {
 		});
 	}
 
-	//прокрутка при клике
+	// rollover when clicking
 	const menuLinks = document.querySelectorAll('.scroll-page[data-goto]');
 	if (menuLinks.length > 0) {
 		menuLinks.forEach(menuLink => {
@@ -155,21 +129,21 @@ if (animItems.length > 0) {
 		}
 	}
 
-	//прилипающий блок
+	// sticky block
 	var $window = $(window),
 		$target = $(".fixed-block");
 	$window.on('scroll',function() {
-		$h = $('.technology-flex').offset().top;
+		$h = $('.advantages-flex').offset().top;
 		var scrollTop = parseInt($window.scrollTop(), 10) + 160;
 		if (scrollTop >= $h && !$target.hasClass('fixed-block-active')) {
 			$target.addClass("fixed-block-active");
 		} else if ($target.hasClass('fixed-block-active') && scrollTop < $h) {
 			$target.removeClass("fixed-block-active");
 		}
-		$('.technology-list .scroll-page').each(function() {
+		$('.advantages-list .scroll-page').each(function() {
 			var targetClass = $(this).data('goto');
 			if (scrollTop > $(targetClass).offset().top) {
-				$('.technology-list .scroll-page.active').removeClass('active');
+				$('.advantages-list .scroll-page.active').removeClass('active');
 				$(this).addClass('active');
 			}
 			else {
