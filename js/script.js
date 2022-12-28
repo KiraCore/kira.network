@@ -130,7 +130,7 @@ if (animItems.length > 0) {
 	}
 
 	// sticky block
-	var $window = $(window),
+	/*var $window = $(window),
 		$target = $(".fixed-block");
 	$window.on('scroll',function() {
 		$h = $('.advantages-flex').offset().top;
@@ -151,6 +151,6 @@ if (animItems.length > 0) {
 			}
 		});
 		return;
-	});
+	});*/
 });
 
