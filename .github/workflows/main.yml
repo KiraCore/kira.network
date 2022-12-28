@@ -68,7 +68,7 @@ jobs:
           sed -i "s/$TARGET_VAR/$ESCAPED_VAR/g" "${{env.RELEASE}}/index.html"
 
           TARGET_VAR="DNS_ADDRESS"
-          REPLACE_VAR=".${{env.DNS}}"
+          REPLACE_VAR="${{env.DNS}}"
           ESCAPED_VAR=$(echo "$REPLACE_VAR" | sed 's/\//\\\//g; s/&/\\&/g; s/\?/\\?/g')
           sed -i "s/$TARGET_VAR/$ESCAPED_VAR/g" "${{env.RELEASE}}/index.html"
 
