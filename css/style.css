@@ -9,8 +9,9 @@ html, body {
 	--font-size24: calc( (100vw - 320px)/(1920 - 320) * (24 - 20) + 20px);
 	--font-size36: calc( (100vw - 320px)/(1920 - 320) * (36 - 32) + 32px);
 	--font-size36-inner: calc( (100vw - 320px)/(1920 - 320) * (36 - 24) + 24px);
+	--font-size50: calc( (100vw - 320px)/(1920 - 320) * (58 - 44) + 28px);
 	--font-size58: calc( (100vw - 320px)/(1920 - 320) * (58 - 44) + 44px);
-	font-family: 'Axiforma';
+	font-family: 'RationalLight';
 	font-size: var(--font-size16);
 	margin:0;
 	padding:0;
@@ -23,8 +24,8 @@ h1, h2, .h1 {
 	color: #fff;
 	font-weight: bold;
 	line-height: 1.2;
-	margin: 24px 0px;
-	font-size: var(--font-size58);}
+	margin: 20px 0px;
+	font-size: var(--font-size50);}
 h3, h4, h5, .h3 {
 	font-size: var(--font-size36);
 	font-weight: normal;

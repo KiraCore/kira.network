@@ -44,3 +44,82 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'SourceCodePro';
+    src: url('../font/SourceCodePro-Regular.eot');
+    src: local('SourceCodePro Regular'), local('SourceCodePro-Regular'),
+        url('../font/SourceCodePro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VT323';
+    src: url('../font/VT323-Regular.eot');
+    src: local('VT323 Regular'), local('VT323-Regular'),
+        url('../font/VT323-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Exo2';
+    src: url('../font/Exo2-Regular.eot');
+    src: local('Exo2 Regular'), local('Exo2-Regular'),
+        url('../font/Exo2-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../font/Nunito-Regular.eot');
+    src: local('Nunito Regular'), local('Nunito-Regular'),
+        url('../font/Nunito-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+@font-face {
+    font-family: 'Coda';
+    src: url('../font/Coda-Regular.eot');
+    src: local('Coda Regular'), local('Coda-Regular'),
+        url('../font/Coda-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+@font-face {
+    font-family: 'RationalDisplayDEMO';
+    src: local('RationalDisplayDEMO'), local('RationalDisplayDEMO'),
+        url('../font/RationalDisplayDEMO.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+@font-face {
+    font-family: 'RationalSemiBold';
+    src: local('RationalSemiBold'), local('RationalSemiBold'),
+        url('../font/RationalSemiBold.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+@font-face {
+    font-family: 'RationalMedium';
+    src: local('RationalMedium'), local('RationalMedium'),
+        url('../font/RationalMedium.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+@font-face {
+    font-family: 'RationalLight';
+    src: local('RationalLight'), local('RationalLight'),
+        url('../font/RationalLight.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+
