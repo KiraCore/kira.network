@@ -1,4 +1,4 @@
-## www.kira.network
+## kira.network
 
 Release static page to IPFS
 
