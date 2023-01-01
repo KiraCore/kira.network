@@ -29,6 +29,13 @@
 		max-width: 100%;
 		font-weight: 400;
 	}
+	/*
+	.video {
+	position: relative;
+	right: -150px;
+	top: -20px;
+	z-index: 1;}
+	*/
 	.video {
 		margin-left: -20px;
 		margin-right: -20px;
@@ -498,7 +505,6 @@
 	.page-blog
 	{
 		padding-top: 72px;
-		padding-bottom: 72px;
 	}
 	.page-advantages,
 	.page-technology .container{
@@ -535,14 +541,6 @@
 	.about-advantages-section {
 		margin-bottom: 69px;
 	}
-	.video1,
-	.video2 {
-		display: none;
-	}
-	.img-video {
-		display: block;
-	}
-	.img-video,
 	.header-img {
 		width: 130%;
 		margin-left: -30%;
@@ -551,6 +549,13 @@
 		flex-flow: row nowrap;
 		justify-content: flex-end;
 		align-items: center;
+	}
+
+	.video1,
+	.video2 {
+		display: block;
+		width: 185%;
+		margin-left: -70%;
 	}
 
 	.header .container {
