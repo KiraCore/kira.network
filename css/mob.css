@@ -45,13 +45,21 @@
 	.page-about .container {
 		align-items: flex-start;
 	}
-	.about-animation {
-		width: 35%;
-		left: 0;
-	}
+
 	.about-right {
 		width: 60%;
 	}
+	.about-animation {
+		width: 35%;
+		left: 0;
+		opacity: 0;
+		transition: all 0.8s ease 0s;
+	}
+	.about-animation._active,
+	.about-right._active{
+		opacity: 1;
+	}
+
 	.h3-half {
 		width: 100%;
 	}
@@ -168,13 +176,14 @@
 		margin-top: 120px;
 		margin-bottom: 60px;
 	}
-	/*конец моб меню*/
+	/*end of mobile menu*/
 	.start {
 		padding-top: 94px;
 	}
 	.page-about .container {
 		flex-flow: column;
 	}
+
 	.about-right {
 		order: 1;
 		width: 100%;
@@ -183,7 +192,15 @@
 		width: 100%;
 		text-align: center;
 		order: 2;
+		left: 0;
+		opacity: 0;
+		transition: all 0.8s ease 0s;
 	}
+	.about-animation._active,
+	.about-right._active{
+		opacity: 1;
+	}
+
 	.advantages-section {
 		width: 45%;
 		margin-bottom: 43px;
