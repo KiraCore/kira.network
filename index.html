@@ -46,10 +46,10 @@
             <div class="gradient-right"></div>
             <div class="gradient-top"></div>
             <div class="gradient-bottom"></div>
-  				<video class="video1" width="100%" height="auto"  autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
+  				<video id="vid1" class="video1" width="100%" height="auto"  autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;"  preload="auto">
   				   <source src="video/1-Kira.mp4" type="video/mp4">
   				</video>
-  				<video class="video2" width="100%" height="auto"  autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
+  				<video id="vid2" class="video2" width="100%" height="auto"  autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;"  preload="auto">
   				   <source src="video/2-Kira-loop.mp4" type="video/mp4">
   				</video>
 			</div>
@@ -59,7 +59,7 @@
     <div class="page-about">
     	<div class="container">
     		<div class="about-animation _anim-items _anim-no-hide">
-        		<video class="video3" width="100%" height="auto" autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto">
+        		<video id="vid3" class="video3" width="100%" height="auto" autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;"  preload="auto">
            			<source src="video/network-loop.mp4" type="video/mp4">
         		</video>
         	</div>
@@ -98,5 +98,10 @@
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
+
+<script>
+    document.getElementById('vid3').play();
+</script>
+
 </body>
 </html>
