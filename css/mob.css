@@ -75,6 +75,17 @@
 	.page-contacts-form {
 		flex-flow: row wrap;
 	}
+
+	.video1,
+	.video2 {
+		display: block;
+		width: 185%;
+		margin-left: -70%;
+	}
+	.video3 {
+		position: relative;
+		z-index:  3;
+	}
 }
 @media screen and (max-width: 800px) {
 	/*mobile menu*/
@@ -413,6 +424,17 @@
 		width: 45%;
 		margin-bottom: 30px;
 	}
+
+	.video1,
+	.video2 {
+		display: block;
+		width: 185%;
+		margin-left: -70%;
+	}
+	.video3 {
+		position: relative;
+		z-index:  3;
+	}
 }
 
 @media screen and (max-width: 640px) {
@@ -567,6 +589,10 @@
 		display: block;
 		width: 185%;
 		margin-left: -70%;
+	}
+	.video3 {
+		position: relative;
+		z-index:  3;
 	}
 
 	.header .container {
