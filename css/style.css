@@ -105,7 +105,6 @@ input, textarea {
 .logo-mob,
 .start-link.mob-start-link,
 .start-link.start-link-mobinpage,
-.img-video,
 .more-mob{
 	display: none;
 }
@@ -487,6 +486,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000D0D0D', e
 	top: 0;
 	left:  0;
 	z-index:  2;
+}
+.video3 {
+	position: relative;
+	z-index:  3;
 }
 
 /*------------------------page about-------------------*/

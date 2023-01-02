@@ -34,17 +34,26 @@
 		margin-right: -20px;
 		right: 0;
 		width: calc(100% + 40px);
+		z-index: 1;
 	}
 	.page-about .container {
 		align-items: flex-start;
 	}
-	.about-animation {
-		width: 35%;
-		left: 0;
-	}
+
 	.about-right {
 		width: 60%;
 	}
+	.about-animation {
+		width: 35%;
+		left: 0;
+		opacity: 0;
+		transition: all 0.8s ease 0s;
+	}
+	.about-animation._active,
+	.about-right._active{
+		opacity: 1;
+	}
+
 	.h3-half {
 		width: 100%;
 	}
@@ -66,9 +75,20 @@
 	.page-contacts-form {
 		flex-flow: row wrap;
 	}
+
+	.video1,
+	.video2 {
+		display: block;
+		width: 185%;
+		margin-left: -70%;
+	}
+	.video3 {
+		position: relative;
+		z-index:  3;
+	}
 }
 @media screen and (max-width: 800px) {
-	/*моб меню*/
+	/*mobile menu*/
 	.icon-mob {
 		z-index: 5;
 		display: block;
@@ -161,13 +181,14 @@
 		margin-top: 120px;
 		margin-bottom: 60px;
 	}
-	/*конец моб меню*/
+	/*end of mobile menu*/
 	.start {
 		padding-top: 94px;
 	}
 	.page-about .container {
 		flex-flow: column;
 	}
+
 	.about-right {
 		order: 1;
 		width: 100%;
@@ -176,7 +197,15 @@
 		width: 100%;
 		text-align: center;
 		order: 2;
+		left: 0;
+		opacity: 0;
+		transition: all 0.8s ease 0s;
 	}
+	.about-animation._active,
+	.about-right._active{
+		opacity: 1;
+	}
+
 	.advantages-section {
 		width: 45%;
 		margin-bottom: 43px;
@@ -395,6 +424,17 @@
 		width: 45%;
 		margin-bottom: 30px;
 	}
+
+	.video1,
+	.video2 {
+		display: block;
+		width: 185%;
+		margin-left: -70%;
+	}
+	.video3 {
+		position: relative;
+		z-index:  3;
+	}
 }
 
 @media screen and (max-width: 640px) {
@@ -498,7 +538,6 @@
 	.page-blog
 	{
 		padding-top: 72px;
-		padding-bottom: 72px;
 	}
 	.page-advantages,
 	.page-technology .container{
@@ -535,14 +574,6 @@
 	.about-advantages-section {
 		margin-bottom: 69px;
 	}
-	.video1,
-	.video2 {
-		display: none;
-	}
-	.img-video {
-		display: block;
-	}
-	.img-video,
 	.header-img {
 		width: 130%;
 		margin-left: -30%;
@@ -551,6 +582,17 @@
 		flex-flow: row nowrap;
 		justify-content: flex-end;
 		align-items: center;
+	}
+
+	.video1,
+	.video2 {
+		display: block;
+		width: 185%;
+		margin-left: -70%;
+	}
+	.video3 {
+		position: relative;
+		z-index:  3;
 	}
 
 	.header .container {
@@ -594,7 +636,6 @@
 	}
 }
 @media screen and (max-width: 480px) {
-	.img-video,
 	.header-img {
 		width: 185%;
     	margin-left: -70%;
