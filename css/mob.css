@@ -29,18 +29,12 @@
 		max-width: 100%;
 		font-weight: 400;
 	}
-	/*
-	.video {
-	position: relative;
-	right: -150px;
-	top: -20px;
-	z-index: 1;}
-	*/
 	.video {
 		margin-left: -20px;
 		margin-right: -20px;
 		right: 0;
 		width: calc(100% + 40px);
+		z-index: 1;
 	}
 	.page-about .container {
 		align-items: flex-start;
@@ -83,7 +77,7 @@
 	}
 }
 @media screen and (max-width: 800px) {
-	/*моб меню*/
+	/*mobile menu*/
 	.icon-mob {
 		z-index: 5;
 		display: block;
@@ -616,7 +610,6 @@
 	}
 }
 @media screen and (max-width: 480px) {
-	.img-video,
 	.header-img {
 		width: 185%;
     	margin-left: -70%;
