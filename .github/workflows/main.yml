@@ -62,6 +62,9 @@ jobs:
           cp -fv ./LICENSE.md "${{env.RELEASE}}/LICENSE.md"
           cp -fv ./${INDEX_MODE}.html "${{env.RELEASE}}/index.html"
 
+          echo "${{env.DNS}}" > "${{env.RELEASE}}/CNAME"
+          echo "www.${{env.DNS}}" >> "${{env.RELEASE}}/CNAME"
+
           TARGET_VAR="IPFS_CID"
           REPLACE_VAR="${{env.IPFS_HASH}}"
           ESCAPED_VAR=$(echo "$REPLACE_VAR" | sed 's/\//\\\//g; s/&/\\&/g; s/\?/\\?/g')
