@@ -36,60 +36,6 @@ if (animItems.length > 0) {
 	}, 300);
 }
 	
-	
-
-	// slider by years
-	var galleryThumbs = new Swiper('.gallery-thumbs', {
-		slidesPerView: 7,
-		freeMode: true,
-		watchSlidesVisibility: true,
-		watchSlidesProgress: true,
-		initialSlide: 3,
-		breakpoints: {
-			320: {
-			  slidesPerView: 2
-			},
-			640: {
-			  slidesPerView: 3
-			},
-			800: {
-			  slidesPerView: 7
-			}
-		 }
-		
-    });
-    var galleryTop = new Swiper('.gallery-top', {
-      thumbs: {
-        swiper: galleryThumbs
-      },
-		initialSlide: 3,
-    });
-	
-
-	// gallery partners
-	var swiper = new Swiper('.page-partners .swiper-container', {		
-		slidesPerView: 4,
-		slidesPerGroup: 4,
-		loop: true,
-		spaceBetween: 30,
-		autoplay: {
-			delay: 2000,
-			disableOnInteraction: false,
-		},
-
-		breakpoints: {
-			320: {
-			  slidesPerView: 2
-			},
-			800: {
-			  slidesPerView: 4
-			}
-		 }
-    });
-	
-	
-
-	
 	// mobile menu
 	const iconMenu = document.querySelector('.icon-mob');
 	const menuBody = document.querySelector('.section-nav');
