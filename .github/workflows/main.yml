@@ -119,11 +119,12 @@ jobs:
           tag_name: "${{env.VERSION}}"
           delete_release: true
         env:
-          GITHUB_TOKEN: ${{ secrets.REPO_ACCESS }}
+          GITHUB_TOKEN: ${{secrets.REPO_ACCESS}}
       - name: Publish release
         if: env.SOURCE_BRANCH == 'master'
         uses: softprops/action-gh-release@de2c0eb89ae2a093876385947365aca7b0e5f844
         with:
+          token: ${{secrets.REPO_ACCESS}}
           body_path: "${{env.RELEASE}}/RELEASE.md"
           tag_name: "${{env.VERSION}}"
           name: "${{env.VERSION}}"
@@ -152,15 +153,15 @@ jobs:
         with:
           comment: "This PR is obsolete, dev branch is ahead of your branch."
         env:
-          GITHUB_TOKEN: ${{ secrets.REPO_ACCESS }}
+          GITHUB_TOKEN: ${{secrets.REPO_ACCESS}}
       - name: Create PR from dev to master branch
         uses: cea2aj/pull-request@84eb0c3478f13651e5649367941b867ca02d7926
         if: env.SOURCE_BRANCH == 'dev'
         with:
-          github_token: ${{ secrets.REPO_ACCESS }}
-          source_branch: ${{ env.SOURCE_BRANCH }}
+          github_token: ${{secrets.REPO_ACCESS}}
+          source_branch: ${{env.SOURCE_BRANCH}}
           destination_branch: master
-          pr_title: "${{ env.SOURCE_BRANCH }} -> master" 
+          pr_title: "${{env.SOURCE_BRANCH}} -> master" 
           pr_label: "kira-automation"
           pr_allow_empty: true
           pr_body: |

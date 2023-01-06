@@ -18,7 +18,13 @@ html, body {
 	height: 100%;
 	font-size: 16px;
 	background: #fff;
-	color: var(--color-gray2);}
+	color: var(--color-gray2);
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
 
 h1, h2, .h1 {
 	color: #fff;
@@ -73,7 +79,8 @@ img {
 	justify-content: space-between;
 	-webkit-align-items: center;
 	align-items: center;
-overflow: hidden;}
+	overflow: hidden;
+}
 	.container {
 		box-sizing: border-box;
 		max-width: 1180px;
