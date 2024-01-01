@@ -114,7 +114,7 @@ jobs:
           ls -a1 "${{env.RELEASE}}"
       - name: Delete old release
         if: env.SOURCE_BRANCH == 'master'
-        uses: dev-drprasad/delete-tag-and-release@v0.2.0
+        uses: dev-drprasad/delete-tag-and-release@v0.2.1
         with:
           tag_name: "${{env.VERSION}}"
           delete_release: true
