@@ -1,4 +1,3 @@
-
 # KIRA's Website
 
 This repository hosts KIRA Network's main website. The following describes the workflow for exporting the Webflow design, updating the `dev-webflow` branch, and publishing the changes to the `master` branch, which is used for GitHub Pages deployment.
