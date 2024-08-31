@@ -17,6 +17,6 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         base: master
-        head: dev-webflow
-        title: "Merge dev-webflow into master"
+        branch: dev-webflow 
+        title: "Auto PR: Merge dev-webflow into master"
         body: "This PR is automatically created to merge changes from dev-webflow into master."
